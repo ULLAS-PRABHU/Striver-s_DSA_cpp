@@ -10,6 +10,7 @@ void print(int n,int i)
     print(n-1,i);
 }
 
+//time complexity is again O(N)
 void print1(int i,int n)
 {
     if(i<1)

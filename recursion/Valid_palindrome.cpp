@@ -2,6 +2,10 @@
 using namespace std;
 
 //time complexity - O(n/2) - space complexity
+
+//two pointers approach (start,end) (left,right)
+
+
 bool f(int i,string &s)
 {
     if(i>=s.size()/2) return true;

@@ -2,6 +2,11 @@
 using namespace std;
 
 
+//time cpmplexity is O(q*n)   {because q is the numbers to check and n is the actual size of the array(the amount of time the loop runs)}
+// for each number we are running the loop n times
+
+//we cannot allocate memor more than 10^6 an if we o then it will throw segemtation fault
+
 int main()
 {
     int n;
@@ -13,7 +18,7 @@ int main()
         cin>>arr[i];
     }
 
-    int hash[11]={0};
+    int hash[n+1]={0};
     for(int i=0;i<n;i++)
     {
         hash[arr[i]]+=1;
